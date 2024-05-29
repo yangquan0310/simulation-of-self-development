@@ -57,8 +57,8 @@ self <- R6Class(
         na_index = which(is.na(sub_matrix))
         na_length = length(na_index)
         matrix[i, na_index] = round(
-          # c(gtools::rdirichlet(1,rep(1,na_length))),
-          1,
+          c(gtools::rdirichlet(1,rep(1,na_length))),
+          # 1,
           2)
       }
       return(matrix)
