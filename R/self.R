@@ -91,7 +91,10 @@ self<-R6Class(
           2)
       }
       return(structure)
-      }
+      },
+    graph_learning=function(){
+      # 通过图的学习来学习结构
+    }
   )
 )
 if (interactive()) {
